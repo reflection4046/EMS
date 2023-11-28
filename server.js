@@ -25,7 +25,7 @@ app.use("/api/v1/users", require("./routes/userRoute"));
 //transections routes
 app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 
-static files
+//static files
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", function (req, res) {
